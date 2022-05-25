@@ -1,8 +1,9 @@
 import React from 'react';
 
-// Importing 2 components
+// Importing 3 components
 import Componentinclinecss from './Componentinclinecss';
 import ComponentFileStyling from './ComponentFileStyling';
+import Calculations from './Calculations';
 
 const App = ()=>{
   // Returning JSX
@@ -11,6 +12,7 @@ const App = ()=>{
     <>
       <Componentinclinecss />
       <ComponentFileStyling />
+      <Calculations />
     </>
   );
 }
