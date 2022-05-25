@@ -1,11 +1,17 @@
 import React from 'react';
 
+// Importing 2 components
+import Componentinclinecss from './Componentinclinecss';
+import ComponentFileStyling from './ComponentFileStyling';
+
 const App = ()=>{
+  // Returning JSX
   return (
-    <div>
-    <h1 >Hello ACM Workshop</h1>
-    <h1 >Hello, ACM Workshop</h1>
-    </div>
+    // Sintactic-Sugar-Form JSX
+    <>
+      <Componentinclinecss />
+      <ComponentFileStyling />
+    </>
   );
 }
 
