@@ -2,10 +2,10 @@ import React from 'react';
 
 const App = ()=>{
   return (
-    <>
-    <h1>Hello, ACM Workshop</h1>
-    <h1>Hello, ACM Workshop</h1>
-    </>
+    <div>
+    <h1 >Hello ACM Workshop</h1>
+    <h1 >Hello, ACM Workshop</h1>
+    </div>
   );
 }
 
