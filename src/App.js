@@ -1,19 +1,26 @@
-import React from 'react';
+import React,{useState} from "react";
+import Dashboard from "./components/Dashboard";
+import Login from "./components/Login";
+import './index.css';
 
-// Importing 3 components
-import Componentinclinecss from './Componentinclinecss';
-import ComponentFileStyling from './ComponentFileStyling';
-import Calculations from './Calculations';
-
-const App = ()=>{
-  // Returning JSX
+function App() {
+  const [pager,setPager] = useState(true);
+  const [credential,setCredential] = useState({});
+  const updatePage=()=>{
+    setPager(!pager);
+  }
+  const updateCred=(obj)=>{
+    console.log(obj);
+    setCredential(obj);
+  }
   return (
-    // Sintactic-Sugar-Form JSX
-    <>
-      <Componentinclinecss />
-      <ComponentFileStyling />
-      <Calculations />
-    </>
+    <div className="App">
+      {
+        pager?
+        <Login updateCred={updateCred} navigate={updatePage}/>:
+        <Dashboard obj={credential} navigate={updatePage}/>
+      }
+    </div>
   );
 }
 
